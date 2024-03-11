@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+
+/* 전체 기본 스타일링 */
+body, .container {
+  background-color: #eaf5e6; /* 배경색 */
+  color: #3C3633; /* 기본 텍스트 색상 */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* 박스, 헤더 */
+.box {
+  background-color: #fdffe3; /* 박스 배경색 */
+  padding: 20px; /* 내부 여백 */
+  margin: 20px auto; /* 외부 여백, 중앙 정렬 */
+  width: 80%; /* 너비 */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  border-radius: 8px; /* 모서리 둥글게 */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box-header {
+  margin-bottom: 20px; /* 헤더 하단 여백 */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* 버튼 추가 스타일 조정 */
+button {
+  background-color: transparent; /* 투명 배경 */
 }
 
-.App-link {
-  color: #61dafb;
+/* 입력 필드, 제출 버튼*/
+input[type="text"] {
+  border: 2px solid #F3D7CA; /* 테두리 스타일 */
+  border-radius: 10px; /* 모서리 둥글게 */
+  padding: 10px; /* 내부 여백 */
+  margin: 5px 0; /* 외부 여백 */
+  background-color: transparent; /* 투명 배경 */
+  color: #000000; /* 텍스트 색상 */
+  width: 300px; /* 너비 */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="submit"] {
+  background-color: #F3D7CA; /* 배경색 */
+  color: #000000; /* 텍스트 색상 */
+  cursor: pointer; /* 커서 스타일 */
+  transition: background-color 0.3s ease; /* 색상 변화 애니메이션 */
+}
+
+input[type="submit"]:hover {
+  background-color: #8EACCD; /* 호버 상태의 배경색 */
+}
+
+/* 목록, 비용 */
+.list, .cost {
+  margin-bottom: 10px; /* 하단 여백 */
+}
+
+/* 제목(h1, h2, h3) */
+h1, h2 {
+  margin: 30px;
+}
+h1, h2, h3 {
+  color: #000000; /* 텍스트 색상 */
+}
+
+/* '저장' 버튼에 추가 스타일링 */
+.btn {
+  background-color: #8EACCD; /* 배경색 */
+  color: white; /* 텍스트 색상 */
+  padding: 10px; /* 내부 여백 */
+  border: none; /* 테두리 없음 */
+  border-radius: 4px; /* 모서리 둥글게 */
+  cursor: pointer; /* 커서 스타일 */
+  margin-top: 10px; /* 상단 여백 */
 }
